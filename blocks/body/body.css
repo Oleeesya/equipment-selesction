@@ -1,0 +1,7 @@
+.body {
+  max-width: 1921px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0;
+  background: rgba(86, 145, 232, 0.1);
+}

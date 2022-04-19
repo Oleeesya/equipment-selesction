@@ -1,0 +1,18 @@
+.elements__choose {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 14px 33px 12px 33px;
+  max-width: 152px;
+  background: #5691E8;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #FFF;
+  border: none;
+}
+
+.elements__choose::after {
+  margin-left: 12px;
+  content: url(../../../img/Vector\ 51.svg);
+}
