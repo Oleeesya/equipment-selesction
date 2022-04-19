@@ -1,10 +1,101 @@
-@import url(blocks/body/body.css);
-@import url(blocks/page/page.css);
-@import url(blocks/header/header.css);
-@import url(blocks/header/__title/header__title.css);
-@import url(blocks/elements/elements.css);
-@import url(blocks/elements/__element/elements__element.css);
-@import url(blocks/elements/__image/elements__image.css);
-@import url(blocks/elements/__description/elements__description.css);
-@import url(blocks/elements/__title/elements__title.css);
-@import url(blocks/elements/__choose/elements__choose.css);
+.body {
+  max-width: 1921px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0;
+  background: rgba(86, 145, 232, 0.1);
+}
+
+.page {
+  box-sizing: border-box;
+  padding: 0;
+  max-width: 1260px;
+  margin: 0 auto;
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+}
+
+
+.header {
+  box-sizing: border-box;
+  margin: 106px auto 65px;
+  padding: 0;
+  text-align: center;
+}
+
+.header__title {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.15;
+  color: #1F1F8E;
+  text-transform: uppercase;
+}
+
+.elements {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-weight: 700;
+  color: #FFF;
+}
+
+.elements__element {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.elements__image {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  height: 560px;
+  object-fit: cover;
+}
+
+.elements__description {
+  box-sizing: border-box;
+  margin: 78px auto 0;
+  padding: 0;
+  position: absolute;
+}
+
+.elements__title {
+  box-sizing: border-box;
+  margin: 0 auto 38px;
+  padding: 0;
+  font-size: 24px;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+
+.elements__choose {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 14px 33px 12px 33px;
+  max-width: 152px;
+  background: #5691E8;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #FFF;
+  border: none;
+}
+
+.elements__choose::after {
+  margin-left: 12px;
+  content: url(img/Vector51.svg);
+}
