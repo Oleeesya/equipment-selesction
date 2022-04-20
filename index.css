@@ -47,22 +47,35 @@
 
 .elements__element {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  max-width: 400px;
+  width: 32.2%;
+  height: 560px;
   display: flex;
   justify-content: center;
   text-align: center;
   position: relative;
 }
 
-.elements__image {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  width: 400px;
-  height: 560px;
-  object-fit: cover;
+.elements__element_type-flat {
+  background-image: url(img/flat.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.elements__element_type-house {
+  background-image: url(img/house.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.elements__element_type-business {
+  background-image: url(img/business.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .elements__description {
@@ -81,6 +94,10 @@
   text-transform: uppercase;
 }
 
+.elements__link {
+  text-decoration: none;
+}
+
 .elements__choose {
   box-sizing: border-box;
   margin: 0 auto;
@@ -93,9 +110,96 @@
   cursor: pointer;
   color: #FFF;
   border: none;
+  display: flex;
+  align-items: center;
 }
 
 .elements__choose::after {
   margin-left: 12px;
   content: url(img/Vector51.svg);
+}
+
+@media (max-width: 1200px) {
+  .page {
+    width: 1140px;
+  }
+}
+
+@media (max-width: 991px) {
+  .page {
+    width: 840px;
+  }
+
+  .elements__element {
+    height: 420px;
+  }
+
+  .header__title {
+    font-size: 25px;
+  }
+
+  .elements__title {
+    font-size: 20px;
+  }
+
+  .elements__choose {
+    padding: 12px 28px 10px 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    width: 640px;
+  }
+
+  .elements__element {
+    height: 340px;
+  }
+
+  .header__title {
+    font-size: 22px;
+  }
+
+  .elements__title {
+    font-size: 18px;
+  }
+
+  .elements__choose {
+    padding: 10px 25px 9px 25px;
+    font-size: 14px;
+  }
+
+  .elements__choose::after {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page {
+    width: 450px;
+  }
+
+  .elements {
+    display: block;
+  }
+
+  .elements__element {
+    width: 80%;
+    height: 460px;
+    margin-bottom: 20px;
+  }
+
+  .header__title {
+    font-size: 25px;
+  }
+
+  .elements__title {
+    font-size: 24px;
+  }
+
+  .elements__choose {
+    padding: 14px 33px 12px 33px;
+    font-size: 14px;
+  }
 }
